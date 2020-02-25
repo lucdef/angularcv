@@ -1,1 +1,10 @@
-<p>home works!</p>
+<h1>Welcome {{sVisitorName}}  to home component</h1>
+<div class="container" [style.background-color]="sVisitorName ==''?'red':'blue'">
+<ng-template [ngIf]="sVisitorName!=''" [ngIfElse]="none">
+<p>hank you to giving your name</p>
+</ng-template>
+<ng-template #none>
+<p>Please enter your name ...</p>
+</ng-template>
+<input type="text" [(ngModel)]="sVisitorName" >
+</div>

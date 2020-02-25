@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  iCompteur: number;
 
-  constructor() { }
+  sVisitorName: string = '';
+  name:string = "";
+  constructor() { this.iCompteur = 0;}
 
   ngOnInit(): void {
+  }
+  compteur()
+  {
+    this.iCompteur++;
   }
 
 }

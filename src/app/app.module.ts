@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { FormationsComponent } from './formations/formations.component';
 import { CompetencesComponent } from './competences/competences.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CompetencesComponent } from './competences/competences.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
